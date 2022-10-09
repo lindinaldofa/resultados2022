@@ -1,0 +1,8 @@
+Lib/site-packages
+Scripts
+share
+etc
+venv
+*.pyc
+.DS_Store
+.env
