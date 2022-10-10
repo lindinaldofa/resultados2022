@@ -7,7 +7,7 @@ from _dados import *
 from _funcoes import *
 
 VALID_USERNAME_PASSWORD_PAIRS = {
-    'cicero': 'Cicero65Filho'
+    'naldo': 'Eleicoes2022'
 }
 
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
