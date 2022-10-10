@@ -92,7 +92,7 @@ def update_figure(candidato):
     figmap.update_layout(font_size=16, mapbox_accesstoken="pk.eyJ1IjoibGluZGluYWxkbyIsImEiOiJjbDFqenRma2IxbXN6M2VwM3ptc3l5OGUzIn0.dYrMp3TEvEBSsHAuv5sanA", mapbox_style = "mapbox://styles/lindinaldo/cl6od5yro000114p3vt7a6yii")
     
 
-    dataloc = datacand.groupby(['Local'], as_index=False)['Votos'].sum()
+    dataloc = datacand.groupby(['Local', 'Cidade'], as_index=False)['Votos'].sum()
     dataloc['Porcentagem'] = round(dataloc.Votos/dataloc.Votos.sum()*100, 2)
 
     tablocais = tabela_pag(dataloc.sort_values("Votos", ascending=False))
