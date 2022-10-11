@@ -6,7 +6,7 @@ data22 = pd.read_csv('assets/dataeleicao22.csv')
 data22.rename(columns={'NM_MUNICIPIO':'Cidade', 'QT_VOTOS':'Votos'}, inplace=True)
 
 #gerando lista de nomes
-nomes = list(data22['NM_VOTAVEL'].unique())
+nomes = list(data22.NM_VOTAVEL.unique())
 #gerando lista de cargos
 cargos = list(data22['DS_CARGO'].unique())
 
